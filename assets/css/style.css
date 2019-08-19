@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:400,400i,500,500i,700,700i,900,900i&display=swap");
+
+/* body */
+
+body {
+    margin: 0;
+}
+
+body.landing #page-wrapper {
+	padding-top: 0;
+}
+
+/* header & navbar */
+
+#header {
+    background: #FFFFFF;
+	  color: #7e8487;
+    cursor: default;
+    height: 3.25em;
+    left: 0;
+    line-height: 3.25em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    font-family: helvetica;
+}
+
+#header nav {
+	height: inherit;
+    line-height: inherit;
+    position: absolute;
+    right: 1.25em;
+    top: 0;
+    vertical-align: middle;
+    font-family: 'Red Hat Display';
+}
+
+#header nav > ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#header nav > ul > li {
+    display: inline-block;
+    margin-left: 1.5em;
+    padding-left: 0;
+}
+
+#header nav > ul > li a {
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#header nav > ul > li:first-child {
+    margin-left: 0;
+}
+
+#header nav > ul > li:hover a {
+    color: #F9DC5C;
+}
+
+/* banner */
+
+#banner2 .info {
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+    background-color:rgba(249,220,92, 1);
+    color: white;
+    text-shadow: 1px 1px gray;
+    font-size: 20px;
+}
+
+/* bio-short */
+
+#bio-short {
+    padding-left: 5%;
+    padding-top: 2.5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    text-align: justify;
+    font-weight: 300;
+    font-family: 'Merriweather';
+}
+
+#bio-short .top {
+    font-size: 25px;
+    text-align: center !important;
+    font-family: 'Red Hat Display' !important;
+}
+
+#bio-short .top b {
+  color: #F9DC5C;
+}
+
+#bio-short a {
+  color: black;
+  text-decoration: underline;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#bio-short a:hover {
+  background-color: #F9DC5C;
+  border-radius: 25px;
+}
+
+
+.video-container #myVideo {
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+#banner2 .overlay {
+  position: relative;
+  top: 1em;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#banner2 {
+  position: relative;
+  background-color: #F9DC5C;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+#banner2 video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#banner2 .container {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  margin-left: 5em;
+  margin-top: 7em;
+  padding:0;
+}
+
+#banner2 h1 {
+  font-size: 75px;
+  font-weight: 900;
+  font-family: 'Playfair Display';
+  text-shadow: 3px 3px rgba(249,220,92, 1);
+}
+
+#banner2 p {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'Red Hat Display';
+  margin: 0 !important;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-color: #F9DC5C;
+}
+
+#banner2 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 1;
+  background-color: #7e8487;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  #banner2 {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') white no-repeat center center scroll;
+  }
+  #banner2 video {
+    display: none;
+  }
+}
+
+/* blog */
+
+#blog-preview {
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #F9DC5C;
+}
+
+#blog-preview .blog-head {
+  font-size: 50px;
+  color: black;
+  font-family: 'Red Hat Display';
+  font-weight: 900;
+  text-shadow: 3px 3px white;
+  text-decoration: underline;
+  text-decoration-color: black;
+  margin-left: 0;
+}
+
+.blog {
+  background-color: white;
+  margin-top: 1em;
+  border-radius: 25px;
+  padding: 2em;
+  padding-bottom: 3em;
+  font-family: 'Merriweather';
+  font-weight: 300;
+  text-align: justify;
+  box-shadow: 10px 10px;
+}
+
+.blog .blog-title {
+  color: black;
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Red Hat Display';
+}
+
+.blog .blog-info {
+  font-family: 'Red Hat Display';
+}
+
+.blog a {
+  color: black;
+  text-decoration: underline;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.blog a:hover {
+  background-color: #F9DC5C;
+  border-radius: 25px;
+}
+
+.blog iframe {
+  border: 0px;
+  border-radius: 25px;
+}
+
+.static-banner {
+  width: 100%;
+  height: 7em;
+  background-color: #F9DC5C;
+  padding-top: 5em;
+  text-align: center;
+  margin: 0 0;
+}
+
+.static-banner .static-banner-title {
+  color: black;
+  font-family: 'Red Hat Display';
+  line-height: 1.25em;
+  font-size: 70px;
+  font-weight: 900;
+  text-shadow: 3px 3px white;
+}
+
+.bio-quote {
+  padding-left: 5%;
+    padding-top: 2.5%;
+    padding-right: 5%;
+    text-align: justify;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Merriweather';
+}
+
+.bio-body {
+  padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    font-weight: 300;
+    font-family: 'Merriweather';
+}
+
+.sv-head {
+  font-family: 'Red Hat Display';
+  font-size: 50px;
+  font-weight: 900;
+}
+
+#services {
+  text-align: center;
+  padding-left: 5%;
+    padding-top: 2.5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    font-weight: 300;
+    font-family: 'Merriweather';
+}
+
+#services .smr-holder {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+#services .smr-holder a {
+    padding:1em;
+
+    text-decoration: none;
+    color: black;
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    padding: 1.5em 0.5em;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: #F9DC5C;
+    transition: 0.3s;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    box-shadow: 3px 3px black;
+    width: 28%;
+}
+
+#services .smr-holder a:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    box-shadow: 3px 3px #F9DC5C;
+}
+
+.services-body {
+  padding: 5%;
+  text-align: justify;
+  font-weight: 300;
+  font-family: 'Merriweather';
+}
